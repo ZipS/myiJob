@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="2" >
+
+        <Button
+            android:id="@+id/main_search"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="D" />
+
+        <Button
+            android:id="@+id/main_choose"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/main_editText1"
+            android:layout_alignParentLeft="true"
+            android:text="S" />
+
+        <EditText
+            android:id="@+id/main_editText1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/main_search"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/inputhint" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.ijob.listview.XListView
+            android:id="@+id/main_xListView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.ijob.listview.XListView>
+    </LinearLayout>
+
+</LinearLayout>

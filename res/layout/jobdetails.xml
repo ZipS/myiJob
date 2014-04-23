@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal|left"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/jobdetails_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="back" />
+
+    <TextView
+        android:id="@+id/textView_jobtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView_company"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView_hint_company_type"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_hint_company_type" />
+
+        <TextView
+            android:id="@+id/textView_company_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView_hint_workplace"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_hint_workplace" />
+
+        <TextView
+            android:id="@+id/textView_workplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_hint_jobneed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_hint_jobneed" />
+
+        <TextView
+            android:id="@+id/textView_jobneed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/onlineprofile" />
+
+        <Button
+            android:id="@+id/button_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/offlineprofile" />
+
+    </LinearLayout>
+
+</LinearLayout>
